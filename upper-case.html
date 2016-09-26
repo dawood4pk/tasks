@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Upper case.</title>
+  <meta name="description" content="Upper Case.">
+  <meta name="author" content="Dawood Butt">
+
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="js/lib/jquery-2.0.2.min.js"></script>
+  <script src="js/upper-case.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#ucConvert').click(function () {
+        var sString = $('#sString').val();
+        if ( $.trim( sString ) !== "" ){
+          if ( HELPSCOUT.UC.Functions.isFirstUpperCase( sString ) ){
+            $('#ucString').html( "<b>Yes!</b> the string: [<b>"+sString+"</b>] starts with an upper-case letter A-Z" );
+          }else{
+            $('#ucString').html( "<b>No!</b> the string: [<b>"+sString+"</b>] don't starts with an upper-case letter A-Z" );
+          }
+        }else{
+          alert( "Empty input!" );
+        }
+      });// End of upper case Button.
+    });// End of ready function.
+  </script>
+</head>
+
+<body>
+	<form>
+      Enter: <input type="text" id="sString" value=""><br>
+      <input type="button" id="ucConvert" value="is First Upper Case."><br>
+    </form>
+	<div id="ucString"></div>	
+</body>
+</html>
