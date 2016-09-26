@@ -20,3 +20,13 @@ Mankind has finally met Martians! You're assigned an important and tricky task t
 Calendar (calendar.html, js\calendar.js)
 =======================================================
 Construct a list containing all weekdays for an arbitrary period in an arbitrary year. No Saturdays nor Sundays are supposed to be in this list. Write a class containing the methods that you need for constructing such a list. Take into account that the content in this list may be presented in more than one way. You can assume that your functions only responsibility is to return this list.
+
+=======================================================
+Flatten Array (flatten.html, js\flatten.js)
+=======================================================
+Flatten an array of arbitrarily nested arrays of integers.
+
+=======================================================
+Upper case (upper-case.html, js\upper-case.js)
+=======================================================
+Determines if a string starts with an upper-case letter A-Z.
